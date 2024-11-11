@@ -1,0 +1,284 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #0e0c0c;
+    color: #330505;
+    background-size: cover;
+}
+
+header {
+    background-color: #4CAF50;
+    color: #0f0e42;
+    text-align: center;
+    padding: 15px 0;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+main {
+    padding: 20px;
+    text-align: center;
+}
+
+section {
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #cccccc;
+    background-color: #146e44;
+    max-width: 1290px;
+    text-align: left;
+}
+
+section h2 {
+    color: #000000;
+    border-bottom: 2px solid #4CAF50;
+    padding-bottom: 5px;
+}
+
+.cultivo-info {
+    margin-bottom: 30px;
+}
+
+.cultivo-info h3 {
+    margin-bottom: 10px;
+}
+
+.cultivo-info .cultivo-content {
+    display: flex;
+    align-items: center;
+}
+
+.cultivo-info .cultivo-content img {
+    width: 200px;
+    height: auto;
+    border-radius: 5px;
+    border: 2px solid #ccc;
+    cursor: pointer;
+}
+
+.cultivo-description {
+    display: none;
+    width: 70%;
+    margin: 20px auto;
+    text-align: justify;
+}
+
+.proceso-info {
+    margin-bottom: 30px;
+}
+
+.proceso-info h3 {
+    margin-bottom: 10px;
+}
+
+.proceso-info .proceso-content {
+    display: flex;
+    align-items: center;
+}
+
+.proceso-info .proceso-content img {
+    width: 200px;
+    height: auto;
+    border-radius: 5px;
+    border: 2px solid #ccc;
+    cursor: pointer;
+}
+
+.proceso-description {
+    display: none;
+    width: 70%;
+    margin: 20px auto;
+    text-align: justify;
+}
+
+.about-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.about-text {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.about-text p {
+    text-align: left;
+}
+
+.about-image {
+    flex: 1;
+    text-align: center;
+}
+
+.about-image img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+#inicio {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+#inicio h2 {
+    width: 100%;
+}
+
+#inicio p {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+#inicio .options {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#inicio .options div {
+    margin: 20px;
+    text-align: center;
+}
+
+#inicio .options a {
+    text-decoration: none;
+}
+
+#inicio .options a img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid #fff;
+    transition: transform 0.3s;
+}
+
+#inicio .options p {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+#inicio .options a:hover img {
+    transform: scale(1.1);
+}
+
+#linea1 {
+    margin: 20px 0;
+    border: 0;
+    height: 3px;
+    background-image: linear-gradient(to right, rgba(255, 0, 0, 0), rgba(60, 0, 255, 0.75), rgba(255, 0, 0, 0));
+
+}
+
+hr {
+    margin: 20px 0;
+    border: 0;
+    height: 3px;
+    background-image: linear-gradient(to right, rgba(255, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(255, 0, 0, 0));
+
+}
+
+#insumos {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.insumo-option {
+    scroll-snap-align: start;
+    width: 90vw;
+    flex-shrink: 0;
+    scroll-snap-stop: always;
+    text-align: center;
+}
+
+.insumo-option a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.insumo-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.insumo-content img {
+    width: 150px;
+    height: auto;
+    margin: 10px 0;
+}
+
+.opcion-fertilizante {
+    display: inline-block;
+    text-align: center;
+    margin: 0 10px;
+}
+
+.opcion-fertilizante h4 {
+    margin: 10px 0;
+}
+
+.opcion-fertilizante img {
+    display: block;
+    margin: 0 auto;
+    cursor: pointer;
+}
+
+.opcion-fertilizante p {
+    display: none;
+}
+#contacto {
+    background-color: #146e44;
+    padding: 50px;
+    text-align: center;
+}
+
+#contacto h2 {
+    color: #000000;
+    font-size: 2em;
+}
+
+#contacto p {
+    color: #000000;
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+
+#contacto p:first-child {
+    font-weight: bold;
+    color: #007BFF;
+}
+
+#contacto p:last-child {
+    font-style: italic;
+    color: #000000;
+}

@@ -1,0 +1,33 @@
+{%include 'sitio/cabecera.html'%}
+<h2>Editar datos</h2>
+<div class="container">
+    <div class="row">
+        <div class="col-md-4"></div>
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-header">
+                    FORMULARIO DE ACTUALIZACIÓN
+                </div>
+                <form action="/sitio/guardar" method="post">
+                    <div class="mb-3">
+                        <label for="nombres">Nombres</label>
+                        <input class="form-control" type="text" name="nombres" id="nombres" value="{{dato.1}}">
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="telefono">Teléfono</label>
+                        <input class="form-control" type="number" name="telefono" id="telefono" value="{{dato.2}}">
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="email">Email</label>
+                        <input class="form-control" type="email" name="email" id="email" value="{{dato.3}}">
+                    </div>
+                    <button type="submit" class="btn btn-secondary">Actualizar</button>
+                </form>
+            </div>
+        </div>
+        <div class="col-md-4"></div>
+    </div>
+</div>
+{%include 'sitio/pie_pagina.html'%}

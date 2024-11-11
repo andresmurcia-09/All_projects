@@ -1,0 +1,68 @@
+{%include 'sitio/cabecera.html'%}
+<h3 class="text-white">Aplicación web en python</h3>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-5">
+            <div class="card">
+                <div class="card-header">
+                    FORMULARIO DE REGISTRO
+                </div>
+                <form action="/sitio/guardar" method="post">
+                    <div class="mb-3">
+                        <label for="nombres">Nombres</label>
+                        <input class="form-control" type="text" name="nombres" id="nombres" required>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="telefono">Teléfono</label>
+                        <input class="form-control" type="number" name="telefono" id="telefono" required>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="email">Email</label>
+                        <input class="form-control" type="email" name="email" id="email" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Guardar</button>
+                    <button type="reset" class="btn btn-danger">Limpiar</button>
+                </form>
+            </div>
+        </div>
+        <div class="col-md-7">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Codigo</th>
+                        <th>Nombres</th>
+                        <th>Teléfono</th>
+                        <th>Email</th>
+                        <th>Acciones</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for user in usuario%}
+                    <tr>
+                        <td>{{user[0]}}</td>
+                        <td>{{user[1]}}</td>
+                        <td>{{user[2]}}</td>
+                        <td>{{user[3]}}</td>
+                        <td>
+                            <form action="/sitio/actualizar" method="post">
+                                <input type="hidden" name="codigo" id="codigo" value="{{user[0]}}">
+                                <button type="submit" class="btn btn-warning">Editar</button>
+                            </form>
+
+                            <form action="/sitio/eliminar" method="post">
+                                <input type="hidden" name="codigo" id="codigo" value="{{user[0]}}">
+                                <button type="submit" class="btn btn-dark">Eliminar</button>
+                            </form>
+                        </td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+{%include 'sitio/pie_pagina.html'%}
