@@ -1,4 +1,4 @@
-// Almacenamiento inicial
+// Almacenamiento
 const productos = [];
 const clientes = [];
 const pedidos = [];
