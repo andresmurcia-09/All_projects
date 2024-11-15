@@ -95,7 +95,7 @@ const Informes = {
         const totalVentas = pedidos.reduce(
             (total, pedido) => total + pedido.total,
             0
-        ); // Sumar todos los totales de los pedidos
+        ); // Suma todos los totales de los pedidos
         const totalPedidos = pedidos.length; // Contar la cantidad de pedidos
         const promedioVenta = totalVentas / totalPedidos || 0; // Calcular el promedio de ventas
 
