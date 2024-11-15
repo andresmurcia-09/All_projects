@@ -73,7 +73,7 @@ const Pedidos = {
         // Calcular el total del pedido
         const total = productosPedido.reduce((sum, prod) => sum + prod.precio, 0);
 
-        // Crear el pedido con la información obtenida
+        // Crea el pedido con la información obtenida
         const pedido = {
             id: pedidos.length + 1,
             clienteId,
