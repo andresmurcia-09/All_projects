@@ -7,7 +7,7 @@ etiqueta.place(x=100, y=100)
 
 root.title("PYTHON")
 root.config(bg="black")
-root.iconbitmap("aguila.ico")
+#root.iconbitmap("aguila.ico")
 root.geometry("1000x1000")
 
 marco_principal = Frame()
